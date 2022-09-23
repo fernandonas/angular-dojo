@@ -1,0 +1,4 @@
+<div class="wrapper">
+    <input type="checkbox" [(ngModel)]="todo.done" > <span [ngClass]="todo.done ? 'hash' : ''">{{ todo.name }}</span>
+    <button (click)="deletar.emit()">Deletar</button>
+</div>

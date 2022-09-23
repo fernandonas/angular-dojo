@@ -1,0 +1,9 @@
+<h1>To do list</h1>
+<input type="text" [(ngModel)]="name" />
+<button (click)="addTask()">Adicionar task</button>
+
+
+
+<div  class="text-color" *ngFor="let todo of todos">
+    <app-itens (deletar)="remove(todo)" [todo]="todo"></app-itens>
+</div>
